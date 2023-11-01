@@ -50,9 +50,11 @@ class FileStorage:
         Deserializes the JSON file and restores objects to the storage.
         """
         from models import base_model
+        from models import user
 
         module_mapping = {
             "BaseModel": base_model,
+            "User": user
         }
 
         if os.path.exists(self.__file_path):
