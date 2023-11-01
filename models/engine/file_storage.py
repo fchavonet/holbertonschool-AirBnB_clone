@@ -55,16 +55,17 @@ class FileStorage:
             "BaseModel": base_model,
         }
 
-        with open(self.__file_path, "r", encoding="utf-8") as file:
+        if os.path.exists(self.__file_path):
+            with open(self.__file_path, "r", encoding="utf-8") as file:
 
-            data = json.load(file)
+                data = json.load(file)
 
-            for key, value in data.items():
-                class_name = value["__class__"]
+                for key, value in data.items():
+                    class_name = value["__class__"]
 
-                if class_name in module_mapping:
-                    model_module = module_mapping[class_name]
-                    model_class = getattr(model_module, class_name)
+                    if class_name in module_mapping:
+                        model_module = module_mapping[class_name]
+                        model_class = getattr(model_module, class_name)
 
-                obj_instance = model_class(**value)
-                self.__objects[key] = obj_instance
+                    obj_instance = model_class(**value)
+                    self.__objects[key] = obj_instance
