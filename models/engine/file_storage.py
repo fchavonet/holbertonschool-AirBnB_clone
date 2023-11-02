@@ -57,7 +57,7 @@ class FileStorage:
         from models import place
         from models import review
 
-        modules = {
+        module_mapping = {
             "BaseModel": base_model,
             "User": user,
             "State": state,
