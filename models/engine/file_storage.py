@@ -81,5 +81,3 @@ class FileStorage:
 
                     obj_instance = model_class(**value)
                     self.__objects[key] = obj_instance
-        else:
-            self.__objects = {}
