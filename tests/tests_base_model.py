@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 """
+Module with unittests for BaseModel class.
 """
 
 import unittest
@@ -10,6 +11,7 @@ from models.base_model import BaseModel
 
 class TestBaseModel(unittest.TestCase):
     """
+    Test class for BaseModel class.
     """
 
     def test_1_id(self):
@@ -60,5 +62,5 @@ class TestBaseModel(unittest.TestCase):
         self.assertIn('__class__', base_model.to_dict())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
