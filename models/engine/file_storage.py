@@ -51,10 +51,20 @@ class FileStorage:
         """
         from models import base_model
         from models import user
+        from models import state
+        from models import city
+        from models import amenity
+        from models import place
+        from models import review
 
-        module_mapping = {
+        modules = {
             "BaseModel": base_model,
-            "User": user
+            "User": user,
+            "State": state,
+            "City": city,
+            "Amenity": amenity,
+            "Place": place,
+            "Review": review
         }
 
         if os.path.exists(self.__file_path):
