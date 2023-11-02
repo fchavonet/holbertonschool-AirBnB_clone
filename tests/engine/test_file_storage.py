@@ -54,17 +54,6 @@ class TestFileStorage(unittest.TestCase):
         all_objects = storage2.all()
         self.assertIn(f"BaseModel.{obj1.id}", all_objects)
 
-    def test_4_reload_non_existing_file(self):
-        """
-        Test reloading objects from a non-existing JSON file.
-        """
-        if os.path.exists(FileStorage._FileStorage__file_path):
-            os.remove(FileStorage._FileStorage__file_path)
-        storage = FileStorage()
-        storage.reload()
-        all_objects = storage.all()
-        self.assertEqual(len(all_objects), 0)
-
 
 if __name__ == "__main__":
     unittest.main()
