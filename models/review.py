@@ -7,7 +7,7 @@ Module that defines the Review class.
 from models.base_model import BaseModel
 
 
-class Reviex(BaseModel):
+class Review(BaseModel):
     """
     Review class for representing reviews in the AirBnB clone.
 
