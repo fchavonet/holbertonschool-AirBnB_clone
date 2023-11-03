@@ -8,13 +8,13 @@
 
 ## 📝 <span id="description">Description</span>
 
-This repository serves as the foundational component for a comprehensive project aimed at creating an Airbnb clone.
+This repository serves as the foundational component for a comprehensive project aimed at creating an **Airbnb clone**.
 <br>
 It marks the initial phase of this student undertaking, introducing a powerful backend interface, often referred to as a console.
 <br>
 The console empowers users with the ability to effortlessly manage various program data, including object creation, updates, deletions, and efficient file storage management.
 <br>
-By leveraging JSON serialization and deserialization, data persistence is seamlessly maintained across multiple sessions, setting the stage for subsequent projects like HTML/CSS templating, database integration, API development, and front-end integration.
+By leveraging **JSON** serialization and deserialization, data persistence is seamlessly maintained across multiple sessions, setting the stage for subsequent projects like HTML/CSS templating, database integration, API development, and front-end integration.
 
 ## 🔨 <span id="tech-stack">Tech stack</span>
 
@@ -676,13 +676,12 @@ Enjoy your first console!
 
 | FILE | DESCRIPTION |
 | :-: | - |
-| models |  |
 | tests | Unittests files folder. |
 | AUTHORS | A list of all individuals having contributed content to the repository. |
 | README.md | The readme file you are currently reading 😉. |
 | console.py | The console module. |
 
-### Models files
+### Models folder
 
 | FILE | DESCRIPTION |
 | :-: | - |
@@ -696,7 +695,7 @@ Enjoy your first console!
 | state.py | Module that defines the State class, which represents a geographic state or region in our system. |
 | user.py | Module that defines the User class, which represents a user in our system. |
 
-### Tests files
+### Tests folder
 
 | FILE | DESCRIPTION |
 | :-: | - |
@@ -789,17 +788,21 @@ EOF  all  create  destroy  help  quit  show  update
 a7137f85-15d9-46b3-aaae-dfabb8c39797
 (hbnb) all BaseModel
 ["[BaseModel] (a7137f85-15d9-46b3-aaae-dfabb8c39797) {'id': 'a7137f85-15d9-46b3-aaae-dfabb8c39797', 'created_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455473), 'updated_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455490)}"]
+
 (hbnb) update BaseModel a7137f85-15d9-46b3-aaae-dfabb8c39797 first_name "Batman"
 (hbnb) show BaseModel a7137f85-15d9-46b3-aaae-dfabb8c39797
 [BaseModel] (a7137f85-15d9-46b3-aaae-dfabb8c39797) {'id': 'a7137f85-15d9-46b3-aaae-dfabb8c39797', 'created_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455473), 'updated_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455490), 'first_name': 'Batman'}
+
 (hbnb) create BaseModel
 f408def6-3ffa-4a7e-83a0-31b18a35e906
 (hbnb) all BaseModel
 ["[BaseModel] (a7137f85-15d9-46b3-aaae-dfabb8c39797) {'id': 'a7137f85-15d9-46b3-aaae-dfabb8c39797', 'created_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455473), 'updated_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455490), 'first_name': 'Batman'}", "[BaseModel] (f408def6-3ffa-4a7e-83a0-31b18a35e906) {'id': 'f408def6-3ffa-4a7e-83a0-31b18a35e906', 'created_at': datetime.datetime(2023, 11, 3, 17, 0, 34, 57632), 'updated_at': datetime.datetime(2023, 11, 3, 17, 0, 34, 57638)}"]
+
 (hbnb) destroy BaseModel a7137f85-15d9-46b3-aaae-dfabb8c39797
 (hbnb) destroy BaseModel f408def6-3ffa-4a7e-83a0-31b18a35e906
 (hbnb) all BaseModel
 []
+
 (hbnb) 
 ```
 
