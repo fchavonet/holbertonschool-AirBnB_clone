@@ -47,8 +47,12 @@ class TestBaseModel(unittest.TestCase):
         Test if updated_at has been updated.
         """
         base_model = BaseModel()
+        base_model.name = "new_model"
         base_model.save()
         self.assertNotEqual(base_model.created_at, base_model.updated_at)
+
+        with open("file.json", "r", encoding="utf-8") as file:
+            self.assertIn(base_model.name, file.read())
 
     def test_6_to_dict(self):
         """
