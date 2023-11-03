@@ -6,6 +6,32 @@
     <img src="https://camo.githubusercontent.com/a0c52a69dc410e983b8c63fa4aa57e83cb4157cd/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f696e7472616e65742d70726f6a656374732d66696c65732f686f6c626572746f6e7363686f6f6c2d6869676865722d6c6576656c5f70726f6772616d6d696e672b2f3236332f4842544e2d68626e622d46696e616c2e706e67" alt="Holberton AirBnb Clone logo">
 </p>
 
+## 🔖 Table of contents
+<details>
+        <summary>
+		CLICK TO ENLARGE 😇
+        </summary>
+	    📝 <a href="#description">Description</a>
+        <br>
+        🔨 <a href="#tech-stack">Tech stack</a>
+        <br>
+        📋 <a href="#requirements">Requirements</a>
+        <br>
+        🎓 <a href="#instructions">Instructions</a>
+        <br>
+        📂 <a href="#files-description">Files description</a>
+        <br>
+        💻 <a href="#installation">Installation</a>
+        <br>
+        💾 <a href="#commands">Available Commands</a>
+        <br>
+        📥 <a href="#examples">Examples</a>
+        <br>
+        ♥️ <a href="#thanks">Thanks</a>
+        <br>
+        👷 <a href="#authors">Authors</a>
+</details>
+
 ## 📝 <span id="description">Description</span>
 
 This repository serves as the foundational component for a comprehensive project aimed at creating an **Airbnb clone**.
@@ -708,7 +734,7 @@ Enjoy your first console!
 | test_state.py | Unit tests for State class. |
 | test_user.pi | Unit tests for User class. |
 
-## Installation
+## 💻 <span id="installation">Installation</span>
 
 - Clone this repository:
 ```
@@ -727,7 +753,7 @@ chmod +x console.py
 echo "<command>" | ./console.py
 ```
 
-## 💾 Available Commands
+## 💾 <span id="commands">Available Commands</span>
 
 | **COMMAND** | **DESCRIPTION** |
 | :-: | - |
@@ -739,7 +765,7 @@ echo "<command>" | ./console.py
 | `update` | Updates an instance based on the class name and `id` by adding or updating attribute (save the change into the JSON file). |
 | `quit/ EOF` |	Exit the program. |
 
-## 💻 Example
+## 📥 <span id="examples">Examples</span>
 
 ### Launch the console
 
