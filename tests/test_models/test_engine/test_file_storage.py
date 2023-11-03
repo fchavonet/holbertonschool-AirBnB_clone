@@ -100,6 +100,20 @@ class TestFileStorage(unittest.TestCase):
         all_objects = storage2.all()
         self.assertIn(f"BaseModel.{obj1.id}", all_objects)
 
+    def test_4_clear_and_reload(self):
+        """
+        Test clearing storage and reloading it.
+        """
+        base = BaseModel()
+        self.storage.new(base)
+        self.storage.save()
+        base_key = "BaseModel.{}".format(base.id)
+        self.assertIn(base_key, self.storage.all())
+        self.storage.all().clear()
+        self.assertNotIn(base_key, self.storage.all())
+        self.storage.reload()
+        self.assertIn(base_key, self.storage.all())
+
 
 if __name__ == "__main__":
     unittest.main()
