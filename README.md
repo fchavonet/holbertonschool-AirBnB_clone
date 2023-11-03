@@ -675,20 +675,39 @@ Enjoy your first console!
 ### Files
 
 | FILE | DESCRIPTION |
-| :--: | ----------- |
-| | |
+| :-: | - |
+| models |  |
+| tests | Unittests files folder. |
+| AUTHORS | A list of all individuals having contributed content to the repository. |
+| README.md | The readme file you are currently reading 😉. |
+| console.py | The console module. |
 
 ### Models files
 
 | FILE | DESCRIPTION |
-| :--: | ----------- |
-| | |
+| :-: | - |
+| engine -> file_storage.py | Module that defines the FileStorage class, which handles the storage and retrieval of model objects in files. |
+| __init__.py | An initialization file for the "models" package. |
+| amenity.py | Module that defines the Amenity class, which represents an amenity or feature in our system. |
+| base_model.py | Module that defines the BaseModel class, which serves as a base class for other model classes and manages ID, creation, and update dates. |
+| city.py | Module that defines the City class, which represents a city in our system. |
+| place.py | Module that defines the Place class, which represents a place or accommodation in our system. |
+| review.py | Module that defines the Review class, which represents a review or feedback on a place or experience. |
+| state.py | Module that defines the State class, which represents a geographic state or region in our system. |
+| user.py | Module that defines the User class, which represents a user in our system. |
 
 ### Tests files
 
 | FILE | DESCRIPTION |
-| :--: | ----------- |
-| | |
+| :-: | - |
+| __init__.py | An initialization file for the "tests" package. |
+| test_amenity.py | Unit tests for Amenity class.|
+| test_base_model.py | Unit tests for BaseModel class. |
+| test_city.py | Unit tests for City class. |
+| test_place.py | Unit tests for Place class. |
+| test_review.py | Unit tests for Review class. |
+| test_state.py | Unit tests for State class. |
+| test_user.pi | Unit tests for User class. |
 
 ## Installation
 
@@ -753,7 +772,35 @@ EOF  all  create  destroy  help  quit  show  update
 ### Error messages example
 
 ```
+(hbnb) ls
+*** Unknown syntax: ls
 
+(hbnb) create
+** class name missing **
+
+(hbnb) all MyModel
+** class doesn't exist **
+```
+
+### Usage
+
+```
+(hbnb) create BaseModel
+a7137f85-15d9-46b3-aaae-dfabb8c39797
+(hbnb) all BaseModel
+["[BaseModel] (a7137f85-15d9-46b3-aaae-dfabb8c39797) {'id': 'a7137f85-15d9-46b3-aaae-dfabb8c39797', 'created_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455473), 'updated_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455490)}"]
+(hbnb) update BaseModel a7137f85-15d9-46b3-aaae-dfabb8c39797 first_name "Batman"
+(hbnb) show BaseModel a7137f85-15d9-46b3-aaae-dfabb8c39797
+[BaseModel] (a7137f85-15d9-46b3-aaae-dfabb8c39797) {'id': 'a7137f85-15d9-46b3-aaae-dfabb8c39797', 'created_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455473), 'updated_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455490), 'first_name': 'Batman'}
+(hbnb) create BaseModel
+f408def6-3ffa-4a7e-83a0-31b18a35e906
+(hbnb) all BaseModel
+["[BaseModel] (a7137f85-15d9-46b3-aaae-dfabb8c39797) {'id': 'a7137f85-15d9-46b3-aaae-dfabb8c39797', 'created_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455473), 'updated_at': datetime.datetime(2023, 11, 3, 16, 59, 17, 455490), 'first_name': 'Batman'}", "[BaseModel] (f408def6-3ffa-4a7e-83a0-31b18a35e906) {'id': 'f408def6-3ffa-4a7e-83a0-31b18a35e906', 'created_at': datetime.datetime(2023, 11, 3, 17, 0, 34, 57632), 'updated_at': datetime.datetime(2023, 11, 3, 17, 0, 34, 57638)}"]
+(hbnb) destroy BaseModel a7137f85-15d9-46b3-aaae-dfabb8c39797
+(hbnb) destroy BaseModel f408def6-3ffa-4a7e-83a0-31b18a35e906
+(hbnb) all BaseModel
+[]
+(hbnb) 
 ```
 
 ## ♥️ <span id="thanks">Thanks</span>
