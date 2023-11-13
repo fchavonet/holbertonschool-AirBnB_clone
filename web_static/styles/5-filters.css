@@ -29,6 +29,10 @@
 .filters div {
     width: 25%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     margin-left: 50px;
 }
 
