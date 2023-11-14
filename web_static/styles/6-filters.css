@@ -74,6 +74,7 @@
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     background-color: #FAFAFA;
+    z-index: 99;
 }
 
 .filters li {
