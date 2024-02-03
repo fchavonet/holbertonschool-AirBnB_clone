@@ -1,11 +1,8 @@
+<img height="50px" align="right" src="https://github.com/hug0-cstrs/holbertonschool-AirBnB_clone_v2/blob/master/hbnb_logo.png?raw=true" alt="Holberton AirBnb Clone logo">
 <img  height="50px" align="right" src="https://apply.holbertonschool.com/holberton-logo.png">
 
 # Holberton - AirBnB Clone
-
-<p align="center">
-    <img height="200px" src="https://github.com/hug0-cstrs/holbertonschool-AirBnB_clone_v2/blob/master/hbnb_logo.png?raw=true" alt="Holberton AirBnb Clone logo">
-</p>
-
+    
 ## 🔖 Table of contents
 <details>
         <summary>
